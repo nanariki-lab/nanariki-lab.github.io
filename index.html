@@ -12,7 +12,8 @@ body{
     font-family:"Courier New",Consolas,monospace;
     margin:0;
     padding:24px;
-    line-height:1.7;
+    line-height:1.8;
+    font-size:18px;
 }
 
 .container{
@@ -30,24 +31,54 @@ pre{
     margin:0;
 }
 
+.logo{
+    text-align:center;
+    margin:20px 0 30px 0;
+}
+
+.logo img{
+    width:220px;
+    filter:drop-shadow(0 0 8px #33ff66);
+}
+
 a{
-    color:#66ff88;
     text-decoration:none;
 }
 
-a:hover{
-    color:#ccffdd;
-    text-shadow:0 0 5px #33ff66;
+.file{
+    margin:24px 0;
 }
 
-.file{
-    margin:12px 0;
+.file a{
+
+    display:inline-block;
+
+    color:#99ffbb;
+
+    font-size:1.4em;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    padding:6px 0;
+
+}
+
+.file a:hover{
+
+    color:#ffffff;
+
+    text-shadow:
+        0 0 8px #33ff66,
+        0 0 16px #33ff66;
+
 }
 
 .jp{
-    margin-left:28px;
-    color:#99ffbb;
-    font-size:0.95em;
+    margin-left:32px;
+    color:#77dd99;
+    font-size:1em;
 }
 
 .dim{
@@ -67,6 +98,27 @@ a:hover{
         opacity:0;
     }
 }
+
+@media(max-width:768px){
+
+    body{
+        font-size:20px;
+        padding:16px;
+    }
+
+    .panel{
+        padding:18px;
+    }
+
+    .file a{
+        font-size:1.6em;
+    }
+
+    .logo img{
+        width:180px;
+    }
+
+}
 </style>
 </head>
 
@@ -77,6 +129,7 @@ a:hover{
 
 <pre>
 >> boot sequence complete
+</pre>
 <div style="text-align:center; margin-bottom:20px;">
     <img
         src="nanarikilab.jpeg"
@@ -103,29 +156,28 @@ STATUS : OPERATIONAL
 UNIT   : NO.7
 ACCESS : PUBLIC
 ------------------------------------
-</pre>
 
 <br>
 
 <p>C:\> dir</p>
 
 <div class="file">
-<a href="project.html">[ ACCESS PROJECT.EXE ]</a> ........ READY
+<a href="project.html">＞＞ACCESS PROJECT.EXE＜＜</a> ........ READY
 <div class="jp">研究案件・ゲーム一覧</div>
 </div>
 
 <div class="file">
-<a href="archive.html">[ ACCESS ARCHIVE.DAT ]</a> ........ READY
+<a href="archive.html">＞＞ACCESS ARCHIVE.DAT＜＜</a> ........ READY
 <div class="jp">観測記録・開発ログ</div>
 </div>
 
 <div class="file">
-<a href="support.html">[ ACCESS SUPPORT.DAT ]</a> ........ READY
+<a href="support.html">＞＞ACCESS SUPPORT.DAT＜＜</a> ........ READY
 <div class="jp">サポート窓口</div>
 </div>
 
 <div class="file">
-<a href="privacy.html">[ ACCESS PRIVACY.TXT ]</a> ........ READY
+<a href="privacy.html">＞＞ACCESS PRIVACY.TXT＜＜</a> ........ READY
 <div class="jp">情報保安規程</div>
 </div>
 
