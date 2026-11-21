@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARCHIVE.DAT | 第七力学研究班</title>
+
+<style>
+
+body{
+    background:#000;
+    color:#33ff66;
+    font-family:"Courier New",Consolas,monospace;
+    margin:0;
+    padding:24px;
+    line-height:1.7;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.panel{
+    border:1px solid #114411;
+    padding:24px;
+}
+
+pre{
+    white-space:pre-wrap;
+    margin:0;
+}
+
+.log{
+    margin-top:12px;
+    white-space:pre-wrap;
+}
+
+.dim{
+    color:#227744;
+}
+
+.cursor{
+    animation:blink 1s step-end infinite;
+}
+
+a{
+    color:#66ff88;
+    text-decoration:none;
+}
+
+a:hover{
+    text-shadow:0 0 6px #33ff66;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="panel">
+
+<pre>
+>> opening archive database...
+
+ACCESS GRANTED
+
+====================================
+      OBSERVATION ARCHIVE
+====================================
+
+第七力学研究班
+研究記録保管庫
+
+------------------------------------
+DETECTED RECORDS : <span id="recordCount"></span>
+STATUS           : ACTIVE
+------------------------------------
+</pre>
+
+<div class="log">
+LOG 0001
+研究記録閲覧システム構築開始
+</div>
+
+<div class="log">
+LOG 0002
+操作画面の基本設計を完了
+</div>
+
+<div class="log">
+LOG 0003
+開発環境へのAI支援システム投入
+</div>
+
+<div class="log">
+LOG 0004
+観測対象を捕捉
+</div>
+
+<div class="log">
+LOG 0005
+解析プロトコル起動
+</div>
+
+<br>
+
+<pre>
+------------------------------------
+
+開発進行状況
+
+第1期研究
+
+"MAD AXIALIST"
+
+公開準備中
+
+------------------------------------
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dim">
+ARCHIVE STATUS : ONLINE
+LAST SCAN      : SUCCESS
+</div>
+
+<br>
+
+<p>
+<a href="index.html">RETURN TO TERMINAL</a>
+</p>
+
+<br>
+
+<div>
+C:\ARCHIVE&gt;<span class="cursor">_</span>
+</div>
+
+</div>
+</div>
+
+<script>
+
+const logs = document.querySelectorAll('.log');
+
+document.getElementById('recordCount').textContent =
+String(logs.length).padStart(4,'0');
+
+</script>
+
+</body>
+</html>
